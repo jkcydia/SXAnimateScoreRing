@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "SXProgressView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet SXProgressView *progressView;
+
+@property(assign,nonatomic) CGFloat p;
 
 @end
 
@@ -16,7 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    CGFloat score = 4.7;
+//    
+//    CGFloat progress = score - 4;
+//    
+//    self.p =0;
+//    for (int i=0; i<20; i++) {
+//        
+//        self.p += 0.03;
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            self.progressView.progress = self.p;
+//        });
+//        
+//    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
